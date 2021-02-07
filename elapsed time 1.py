@@ -1,5 +1,5 @@
 #時間の経過を時分秒で1秒ごとに取得
-#参考
+#参考にしたサイト
 #https://note.nkmk.me/python-while-usage/
 #https://qiita.com/cyrus_qiita/items/9da73a6687c00ddf9a31
 
