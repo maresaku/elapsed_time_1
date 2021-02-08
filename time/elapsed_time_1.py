@@ -17,7 +17,7 @@ try:
 
 
 		# calculate elapsed time
-  		elapsed_time = int(time.time() - start_time)
+  		elapsed_time = int(end_time - start_time)
 
 		  # convert second to hour, minute and seconds
   		elapsed_hour = elapsed_time // 3600
