@@ -1,5 +1,19 @@
+#1分ごとの時間の差分その2
+#今回はほぼ自作
+#最後の出力を4桁にしたい
+
+from datetime import datetime
+import pytz
 import time
 
-while True:
-  str_time = time.strftime("%H%M")
-  time.sleep(0.1)
+Tokyo=pytz.timezone("Asia/Tokyo")
+start_time = datetime.now(Tokyo)
+
+try:
+	while True:
+		time.sleep(60)
+		end_time = datetime.now(Tokyo)
+		elapsed_time = int(end_time.strftime("%H%M"))-int(start_time.strftime("%H%M"))
+		print(elapsed_time)
+except KeyboardInterrupt:
+  print('stop')
