@@ -1,6 +1,5 @@
 #1分ごとの時間の差分その2
 #今回はほぼ自作
-#最後の出力を4桁にしたい
 
 from datetime import datetime
 import pytz
@@ -14,6 +13,6 @@ try:
 		time.sleep(60)
 		end_time = datetime.now(Tokyo)
 		elapsed_time = int(end_time.strftime("%H%M"))-int(start_time.strftime("%H%M"))
-		print(elapsed_time)
+		print(str(elapsed_time).zfill(4))
 except KeyboardInterrupt:
   print('stop')
